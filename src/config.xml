@@ -16,15 +16,13 @@
         <issuetracker>https://github.com/mognom/crateDB-harvester-operator/issues</issuetracker>
     </details>
 
-    <requirements>
-        <!-- Add any extra requirements here -->
-        <!-- <feature name="${feature-name}" /> -->
-    </requirements>
-
     <preferences>
+        <preference name="server" label="Server URL" description="URL of the CrateDB server" type="text" default="" />
+        <preference name="query" label="SQL query" description="SQL query to execute" type="text" default="wirecloud" />
     </preferences>
 
     <wiring>
+        <outputendpoint name="output" label="Output data" description="Data from the CrateDB instance" type="text" friendcode="data dataset dataserie list" />
     </wiring>
 
     <scripts>
